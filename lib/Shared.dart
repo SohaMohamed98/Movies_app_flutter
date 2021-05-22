@@ -13,6 +13,7 @@ import 'movie.dart';
       for (var item in response.data["results"]) {
         Results m = Results.fromJson(item);
         movies.add(m);
+
       }
       print(movies.length);
     } catch (e) {

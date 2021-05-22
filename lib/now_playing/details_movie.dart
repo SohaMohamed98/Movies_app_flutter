@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/database/database.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import '../movie.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
-  // final String title;
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -73,6 +73,21 @@ Results result;
                           textDirection: TextDirection.ltr,
                         ),
                         width: 240,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                        child: GestureDetector(
+                          onTap: () {
+
+                            AppDatabase().insertMovie(result);
+                            print("Inserted");
+                          },
+                          child: Icon(
+                            Icons.favorite_border,
+                            color: Colors.white,
+                            size: 30.0,
+                          ),
+                        ),
                       ),
                       Container(
                         padding: new EdgeInsets.fromLTRB(20, 10, 0, 0),

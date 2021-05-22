@@ -36,11 +36,27 @@ class Results {
     originalTitle = map['original_title'];
     overview = map['overview'];
     popularity = map['popularity'];
-    posterPath = map['poster_path'] == null ? "" : "https://image.tmdb.org/t/p/w200"+map['poster_path'];
+    posterPath = map['poster_path'] == null ? "" : "https://image.tmdb.org/t/p/w200" + map['poster_path'];
     releaseDate = map['release_date'];
     title = map['title'];
     video = map['video'];
     voteAverage = map['vote_average'];
     voteCount = map['vote_count'];
   }
+
+  Map<String, dynamic> toMap() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['title'] = this.originalTitle;
+    data['imageURL'] = this.posterPath;
+    data['vote'] = this.voteCount;
+    data['popularity'] = this.popularity;
+    data['release'] = this.releaseDate;
+    data['overView'] = this.overview;
+    return data;
+  }
+
+
+
+
 }
