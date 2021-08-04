@@ -3,7 +3,7 @@
 # flutter_app
 
 A new Flutter application.
-![1](https://user-images.githubusercontent.com/48870254/128066836-bfe56776-6e4d-4da5-928e-52682a2c9779.jpg)
+![pic1](https://user-images.githubusercontent.com/48870254/128106655-b5e4eef9-5dc6-4aae-b1c6-e460b4def65c.PNG)
 ![pic](https://user-images.githubusercontent.com/48870254/128106531-c9e68bb0-112b-4856-94e5-8f962913e9af.PNG)
 
 ## Getting Started
